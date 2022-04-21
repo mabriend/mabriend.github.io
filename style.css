@@ -67,15 +67,19 @@ nav {
 
 .presentation > p{
     position: relative;
-    top: 180px;
+    top: 130px;
     width: 30rem;
     font-variant-caps: all-small-caps;
     padding: 10px;
     margin-left: 7.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 10px 0;
+}
+
+.presentation > p > strong{
+    font-size: 2rem;
 }
 
 .ordinateur{
@@ -103,7 +107,7 @@ nav {
 
 .medecouvrir > p{
     position: relative;
-    top: 180px;
+    top: 160px;
     width: 30rem;
     font-variant-caps: all-small-caps;
     padding: 10px;
@@ -126,12 +130,12 @@ nav {
 
 .formation > p{
     font-size: 1.5rem;
-    color: rgb(255, 255, 255, 0.5);
+    color:#0b486b;
 }
 
 .formation > h2{
     font-size: 3rem;
-    color: rgb(255, 255, 255, 0.5);
+    color:#0b486b;
 }
 
 .fleche{
@@ -140,6 +144,7 @@ nav {
 
 .formation > hr{
     margin: 10px;
+    color: #0b486b;
 }
 
 .voiture{
@@ -214,6 +219,97 @@ nav {
     font-size: 2rem;
     margin-top: 5px;
 }
+
+.langages{
+    position: relative;
+    top: 400px;
+    text-align: center;
+    background-color:#0b486b;
+    block-size: auto;
+    padding: 20px;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+.langages > h2{
+    font-size: 3rem;
+}
+
+.langages > hr{
+    color: #fff;
+    margin: 10px auto;
+    width: 50rem;
+}
+
+.progWeb{
+    display: flex;
+    justify-content: center;
+}
+
+.progWeb > figure > img{
+    width: 100px;
+    margin: 25px 50px 0 50px;
+}
+
+.progWeb > figure > figcaption{
+    font-size: 1.5rem;
+}
+
+.prog{
+    display: flex;
+    justify-content: center;
+}
+
+.prog > figure > img{
+    width: 100px;
+    margin: 25px 50px 0 50px;
+}
+
+.prog > figure > figcaption{
+    font-size: 1.5rem;
+}
+
+.lv{
+    display: flex;
+    justify-content: center;
+}
+
+.lv > figure > img{
+    width: 100px;
+    margin: 25px 50px 0 50px;
+}
+
+.lv > figure > figcaption{
+    font-size: 1.5rem;
+}
+
+.imageFondRennes {
+    height: 250vh;
+    background: url('images/imagefondRennes.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.passions{
+    display: flex;
+    justify-content: center;
+}
+
+.passions > h2{
+    position: relative;
+    top: 450px;
+    color:rgb(11,72,107,0.75);
+    font-variant:small-caps;
+    font-size: 4rem;
+    width: fit-content;
+    padding: 15px;
+    background-color: rgb(255, 255, 255, 0.75);
+    border-radius: 10px 0;
+}
+
+
+
 
 @media all and (max-width: 991px) {
 
@@ -339,6 +435,10 @@ nav {
         margin-top: 20px;
     }
 
+    .imageFondNY{
+        height: 300vh;
+    }
+
     .projet > h2{
         position: relative;
         top: 170px;
@@ -381,6 +481,50 @@ nav {
     .kohfrais > hr{
         margin: 10px auto;
         width: 250px;
+    }
+
+    .langages > hr{
+        width: 325px;
+        margin: 10px auto;
+    }
+
+    .progWeb{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .progWeb > figure > img{
+        width: 50px;
+    }
+
+    .progWeb > figure > figcaption{
+        font-size: 1rem;
+    }
+
+    .prog{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .prog > figure > img{
+        width: 50px;
+    }
+
+    .prog > figure > figcaption{
+        font-size: 1rem;
+    }
+
+    .lv{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lv > figure > img{
+        width: 50px;
+    }
+
+    .lv > figure > figcaption{
+        font-size: 1rem;
     }
 }
 
