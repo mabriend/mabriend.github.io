@@ -292,13 +292,15 @@ nav {
 }
 
 .passions{
-    display: flex;
-    justify-content: center;
+    font-variant: small-caps;
+    font-size: 1.25rem;
 }
 
 .passions > h2{
     position: relative;
     top: 450px;
+    margin-left: auto;
+    margin-right: auto;
     color:rgb(11,72,107,0.75);
     font-variant:small-caps;
     font-size: 4rem;
@@ -308,8 +310,80 @@ nav {
     border-radius: 10px 0;
 }
 
+.lesport{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 500px;
+    width: 60rem;
+    text-align: center;
+    background-color: #fff;
+    color: #0b486b;
+    border-radius: 10px 0;
+    padding: 20px;
+}
 
+.lesport > h3{
+    font-size: 2rem;
+}
 
+.lesport > hr{
+    margin: 10px;
+}
+
+.lesport > i{
+    margin-top: 10px;
+}
+
+.sports{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sports > div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 33%;
+}
+
+.sports > div > p{
+    margin: 0 5px;
+}
+
+.sports > hr{
+    margin-top: 10px;
+}
+
+.football > h4{
+    margin-bottom: 5px;
+}
+
+.football > p > i{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.basketball > h4{
+    margin-bottom: 5px;
+}
+
+.basketball > figure > img{
+    width: 35px;
+    margin-top: 5px;
+}
+
+.formule1 > h4{
+    margin-bottom: 5px;
+}
+
+.formule1 > figure > img{
+    width: 75px;
+    margin-top: 10px;
+}
 
 @media all and (max-width: 991px) {
 
@@ -525,6 +599,27 @@ nav {
 
     .lv > figure > figcaption{
         font-size: 1rem;
+    }
+
+    .imageFondRennes{
+        height: 400vh;
+    }
+
+    .passions > h2{
+        font-size: 2rem;
+    }
+
+    .lesport{
+        width: 20rem;
+    }
+
+    .sports{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .sports > div{
+        width: 18rem;
     }
 }
 
