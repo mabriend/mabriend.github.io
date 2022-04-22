@@ -385,6 +385,96 @@ nav {
     margin-top: 10px;
 }
 
+.enbref{
+    position: relative;
+    top: 625px;
+    background-color: #fff;
+    color: #0b486b;
+    block-size: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+}
+
+.enbref > h2{
+    margin: 10px;
+}
+
+.enbref > p{
+    line-height: 2rem;
+}
+
+.enbref > hr{
+    margin:10px 50px;
+    color: #0b486b;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 45rem;
+    background-color: #0b486b;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.renseignements{
+    width: 22.5rem;
+}
+
+.renseignements > p{
+    text-align: center;
+}
+
+.renseignements > p > a{
+    color: #fff;
+}
+
+.renseignements > p > a:hover{
+    color:rgb(255, 255, 255, 0.5);
+}
+
+.contacts > hr{
+    margin: 10px;
+    width: 5px;
+    background-color: #fff;
+}
+
+.CV{
+    width: 22.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.CV > img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.CV > a > img{
+    width: 25px;
+}
+
+.CV > a{
+    position: relative;
+    top: 25%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.CV > a:hover{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1.05rem;
+}
+
 @media all and (max-width: 991px) {
 
     .toggle {
@@ -602,7 +692,7 @@ nav {
     }
 
     .imageFondRennes{
-        height: 400vh;
+        height: 405vh;
     }
 
     .passions > h2{
@@ -620,6 +710,39 @@ nav {
 
     .sports > div{
         width: 18rem;
+    }
+
+    .enbref{
+        top: 560px;
+    }
+
+    .enbref > p{
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .enbref > h2{
+        margin-top: 15px;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+    }
+
+    .contacts > hr{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        height: 5px;
+        border-radius: 2px;
+    }
+
+    .CV > a{
+        position: relative;
+        top: 40px;
     }
 }
 
