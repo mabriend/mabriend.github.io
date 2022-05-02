@@ -130,12 +130,12 @@ nav {
 
 .formation > p{
     font-size: 1.5rem;
-    color:#0b486b;
+    color:white;
 }
 
 .formation > h2{
     font-size: 3rem;
-    color:#0b486b;
+    color:white;
 }
 
 .fleche{
@@ -144,7 +144,7 @@ nav {
 
 .formation > hr{
     margin: 10px;
-    color: #0b486b;
+    color: white;
 }
 
 .voiture{
