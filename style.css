@@ -14,7 +14,7 @@ body {
 
 .logo {
     font-size: 2rem;
-    font-family: 'Impact';
+    font-family: 'Impact',"arial black", "helvetica black", "arial", "sans serif";;
 }
 
 header {
@@ -659,7 +659,7 @@ nav {
     }
 
     .progWeb > figure > img{
-        width: 40px;
+        width: 35px;
     }
 
     .progWeb > figure > figcaption{
@@ -672,7 +672,7 @@ nav {
     }
 
     .prog > figure > img{
-        width: 40px;
+        width: 35px;
     }
 
     .prog > figure > figcaption{
@@ -685,7 +685,7 @@ nav {
     }
 
     .lv > figure > img{
-        width: 40px;
+        width: 35px;
     }
 
     .lv > figure > figcaption{
@@ -693,7 +693,7 @@ nav {
     }
 
     .imageFondRennes{
-        height: 405vh;
+        height: 350vh;
     }
 
     .passions > h2{
