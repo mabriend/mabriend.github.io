@@ -18,6 +18,8 @@ var observer = new IntersectionObserver(function(entries, observer) {
         if (entry.isIntersecting) {
             var aboutMeHeaderTitle = document.getElementById('about-me-header-title');
             aboutMeHeaderTitle.classList.toggle('animateLeft');
+            var aboutMeHeaderPicture = document.getElementById('about-me-header-picture');
+            aboutMeHeaderPicture.classList.toggle('animateTop');
             var aboutMeHeaderDescription = document.getElementById('about-me-header-description');
             aboutMeHeaderDescription.classList.toggle('animateRight');
             var header = document.querySelector('header');
@@ -41,3 +43,17 @@ var observer = new IntersectionObserver(function(entries, observer) {
     });
 }, { threshold: 0.5 })
 observer.observe(aboutMeIutElement);
+
+var aboutMeCooperlElement = document.querySelector('.about-me-cooperl');
+var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var aboutMeHeaderTitle = document.getElementById('about-me-informations-cooperl');
+            aboutMeHeaderTitle.classList.toggle('animateRight');
+            var aboutMeHeaderDescription = document.getElementById('about-me-picture-cooperl');
+            aboutMeHeaderDescription.classList.toggle('animateLeft');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 })
+observer.observe(aboutMeCooperlElement);
