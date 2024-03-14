@@ -1,0 +1,313 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    visibility: hidden;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar > ul > li {
+    margin: 0 15px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease !important;
+}
+
+.menu-link:hover{
+    transform: scale(1.1);
+    color: #E8DBCE;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.home {
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform :scale(1);
+    transition: 2s;
+    overflow: hidden;
+}
+
+.home::before{
+    content: "";
+    background: url(images/photoFondTreb.jpeg) center/cover no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.overlay p {
+    font-size: 1.5em;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.navigation-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+    background-color: white;
+}
+
+.photo-profil img {
+    width: 15rem;
+}
+
+.about-me-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40vh;
+    background-color: gray; 
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+}
+
+.about-me-header-title {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    color: white;
+    position: relative;
+    font-size: 1.75rem;
+    text-decoration: underline;
+    visibility: hidden;
+}
+
+.about-me-header-description {
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+    color: white;
+    position: relative;
+    font-size: 1.50rem;
+    visibility: hidden;
+}
+
+.animateLeft{
+    animation: slideInLeft 1s ease-out;
+    visibility: visible;
+}
+
+.animateRight{
+    animation: slideInRight 1s ease-out;
+    visibility: visible;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-me > hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 1px;
+    background-color: black;
+}
+
+.about-me-iut{
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-informations-iut {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-informations-iut > p:first-of-type{
+    font-size: 1.5rem;
+    text-decoration: solid;
+}
+
+.about-me-informations-iut > p:last-of-type{
+    font-size: 1.25rem;
+    margin-left: 2rem;
+}
+
+.about-me-picture-iut {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-picture-iut > a {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-picture-iut > a:first-of-type > img{
+    width: 5rem;
+    margin: 2rem;
+}
+
+.about-me-picture-iut > a:last-of-type > img{
+    width: 20rem;
+    align-self: center;
+}
+
+.about-me-cooperl{
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me-informations-cooperl > p:first-of-type{
+    font-size: 1.5rem;
+    text-decoration: solid;
+}
+
+.about-me-informations-cooperl > p:last-of-type{
+    font-size: 1.25rem;
+    margin-left: 2rem;
+}
+
+.about-me-picture-cooperl {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-picture-cooperl > a{
+    display: flex;
+}
+
+.about-me-picture-cooperl > a:first-of-type > img{
+    width: 20rem;
+    align-self: center;
+}
+
+.about-me-picture-cooperl > a:last-of-type > img{
+    width: 15rem;
+    align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-buttons a {
+        margin-top: 10px;
+    }
+
+    .navigation-buttons a:hover {
+        background-color: white;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar > ul {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; /* Ajout de cet espacement entre les éléments en mode colonne */
+    }
+
+    .navbar > ul > li {
+        margin: 10px 0;
+    }
+}

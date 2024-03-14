@@ -1,378 +1,87 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathis Briend</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
 </head>
-
 <body>
-
-    <section class="imageFondSki">
-
-    <header>
-        <nav>
-            <div class="logo">
-                <p>MB</p>
-            </div>
-            <div class="toggle">
-                <i class="fa-solid fa-bars ouvrir"></i>
-                <i class="fa-solid fa-bars fermer"></i>
-            </div>
-            <ul class="menu">
-                <li><a href="#formation">Mes formations</a></li>
-                <li><a href="#projet">Mes projets</a></li>
-                <li><a href="#langages">Langages</a></li>
-                <li><a href="#passions">Mes passions</a></li>
+    
+    <header class="hidden">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="menu-link" href="../index.html">Accueil</a></li>
+                <li><a class="menu-link" href="aboutMe.html">À propos de moi</a></li>
+                <li><a class="menu-link" href="#competences">Compétences</a></li>
+                <li><a class="menu-link" href="#projets">Projets</a></li>
+                <li><a class="menu-link" href="#me-contacter">Me contacter</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-        <div class="profil">
-
-            <img class="photo" src="images/IMG_9784.jpeg"/>
-
-            <div class="presentation">
-
-                <p><strong>Mathis Briend</strong></br>
-                    
-                élève en première année de BUT Informatique à l'IUT de Lannion, voulant effectuer ses deux prochaines années d'études en alternance.<br/>
-
-                Le domaine que je préfere est le développement d'applications web ou mobiles. <br/>
-                
-                <i class="fa-solid fa-computer ordinateur"></i>
-
-                </p>
-
+    <div class="home" id="accueil">
+        <div class="overlay">
+            <picture class="photo-profil">
+                <img src="images/photoProfil.PNG">
+            </picture>
+            <h1>Mathis BRIEND</h1>
+            <p>Vous souhaitez me découvrir ?</p>
+            <div class="navigation-buttons">
+                <a class="about-me-button" href="#about-me">À propos de moi</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#me-contacter">Me contacter</a>
             </div>
+        </div>
+    </div>
 
+    <div class="about-me" id="about-me">
+
+        <div class="about-me-header">
+            <p id="about-me-header-title" class="about-me-header-title">À propos de moi</p>
+            <p id="about-me-header-description" class="about-me-header-description">Je m'appelle Mathis Briend, j'ai 20 ans, et je suis actuellement alternant
+                <br/> en troisième année de BUT 3 à l'IUT de Lannion. 
+                <br/> Je travaille donc en alternance pour la société Cooperl Arc Atlantique</p>
         </div>
 
-        <div class="medecouvrir">
-
-            <p>Vous voulez en savoir plus sur moi ?
-
-            <br/>
-
-            N'hesitez pas, scrollez pour me découvrir d'avantage ou utiliser simplement le menu en haut de la page !
-
+        <div class="about-me-iut">
+            <div id="about-me-informations-iut" class="about-me-informations-iut">
+                <p>IUT DE LANNION | BUT INFORMATIQUE</p>
+                <p>Depuis septembre 2021, je suis étudiant à l'IUT de Lannion en filière informatique, 
+                <br/>et je me spécialise dans le développement d'applications Web et Mobile.
             </p>
-
+            </div>
+            <div id="about-me-picture-iut" class="about-me-picture-iut">
+                <a href="https://iut-lannion.univ-rennes.fr/informatique"n target="_blank"><img src="images/logoIut.svg.png"></a>
+                <a href="https://iut-lannion.univ-rennes.fr/informatique"n target="_blank"><img src="images/iutLannion.jpeg"></a>
+            </div>
         </div>
 
-        <div id="formation" class="formation">
+        <hr/>
 
-            <h2>Mes Formations</h2>
-
-            <hr/>
-
-            <p>Baccalauréat général ( 2018-2021 )</br>
-
-            <i class="fa-solid fa-arrow-down fleche"></i></br>
-            
-            Spécialité Mathémathiques, Numérique et Science de l'Informatique</br>
-
-            Option Mathémathiques Expertes</br>
-        
-            Lycée Saint-Charles La Providence </br>
-        
-            Saint-Brieuc (22000)</p>
-
-            <hr/>
-
-            <p>Bachelor Universitaire de Technologie ( 2021-2024 )</br>
-
-            <i class="fa-solid fa-arrow-down fleche"></i></br>
-                
-            BUT Informatique</br>
-            
-            Institut universitaire de technologie</br>
-            
-            Lannion (22300)</p>
-
-            <hr/>
-
-            <p>Titulaire d'un permis B <br/>
-
-            <i class="fa-solid fa-car-side voiture"></i></p>
-
-        </div>
-
-        <section class="imageFondNY">
-
-        <div class="projet">
-
-            <h2 id="projet" >Mes Projets</h2>
-
-            <div class="yams">
-
-                <p><strong>Réalisation d'un jeu de Yams</strong></p>
-
-                <hr/>
-
+        <div class="about-me-cooperl">
+            <div class="about-me-picture-cooperl">
+                <a href="https://www.cooperl.com/" target="_blank"><img src="images/cooperl.avif"></a>
+                <a href="https://www.cooperl.com/" target="_blank"><img src="images/logoCooperl.jpeg"></a>
+            </div>
+            <div class="about-me-informations-cooperl">
+                <p>COOPERL ARC ATLANTIQUE | ÉQUIPE WEB & MOBILE</p>
                 <p>
-                    - Création d'une maquette représentant la table des scores<br/>
-                    - Création d'une feuille de test regroupant les tests à effectuer sur le programme<br/>
-                    - Rédaction du programme en pseudo-code pour comprendre son fonctionnement<br/>
-                    - Réalisation du programme en langage C avec Visual Studio Code<br/>
-                    - Création d'une documentation avec le logiciel Doxygen<br/>
-                    <i class="fa-solid fa-dice de"></i>
+                    Depuis juillet 2022, je travaille en alternance pour la société Cooperl Arc Atlantique, 
+                    basé à Lamballe, dans les Côtes d'Armor. Je suis développeur au sein de l'Équipe 
+                    transverse web & mobile.
                 </p>
-                
-                <hr/>
-
-                <p>Ce projet m'a permis de développer mon sens du travail en autonomie, mais également de porter un oeil critique sur ce que je réalisais,
-                ainsi j'avais une certaine rigueur envers mon travail.</p>
-
             </div>
-
-            <div class="kohfrais">
-
-                <p><strong>Réalisation d'un site web en équipe</strong></p>
-
-                <hr/>
-
-                <p>
-                    - Réalisation de la partie développement (HTML/CSS) avec le framework Boostsrap<br/>
-                    - Répartition du travail entre les trois membres de l'équipe<br/>
-                    - Réalisation d'une maquette et d'une charte graphique du site<br/>
-                    <i class="fa-regular fa-window-maximize fenetre"></i>
-                </p>
-                
-                <hr/>
-
-                <p>Ce projet m'a permis de développer mon sens du travail en équipe avec un rôle précis à respecter tout
-                au long de notre projet </p>
-
-            </div>
-
         </div>
+        
+    </div>
 
-        <div id="langages" class="langages">
-
-            <h2>Langages</h2>
-
-            <hr/>
-
-            <h3>Langages de programmation Web</h3>
-
-            <div class="progWeb">
-
-                <figure>
-                    <img src="images/logohtml.png" alt="Logo HTML" title="HTML">
-                    <figcaption>HTML</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/logocss.png" alt="Logo CSS" title="CSS">
-                    <figcaption>CSS</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/bootstrap-logo.png" alt="Logo Boostsrap" title="Boostsrap">
-                    <figcaption>Boostsrap</figcaption>
-                </figure>
-
-            </div>
-
-            <hr/>
-
-            <h3>Langages de programmation</h3>
-
-            <div class="prog">
-
-                <figure>
-                    <img src="images/python.png" alt="Logo Python" title="Python">
-                    <figcaption>Python</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/java.png" alt="Logo Java" title="Java">
-                    <figcaption>Java</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/langageC.png" alt="Logo langage C" title="Langage C">
-                    <figcaption>C</figcaption>
-                </figure>
-
-            </div>
-
-            <hr/>
-
-            <h3>Langues étrangères</h3>
-
-            <div class="lv">
-
-                <figure>
-                    <img src="images/anglais.png" alt="Drapeau Royaume-Uni" title="Royaume-Uni">
-                    <figcaption>Anglais</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/espagnol.png" alt="Drapeau Espagne" title="Espagne">
-                    <figcaption>Espagnol</figcaption>
-                </figure>
-
-            </div>
-
-        </div>
-
-        <section class="imageFondRennes">
-
-        <div class="passions">
-
-            <h2 id="passions">Mes passions</h2>
-
-            <div class="lesport">
-
-                <h3>Le sport</h3>
-
-                <hr/>
-
-                <p>Je suis passioné de sport en général, mais surtout de trois sports en particulier</p>
-
-                <i class="fa-solid fa-arrow-down fleche"></i></br>
-
-                <div class="sports">
-
-                    <div class="football">
-
-                        <h4><ins>Le football</ins></h4>
-
-                        <p>Le football est ma principale passion depuis que je suis tout jeune <br/>
-
-                        J'en fais en club depuis maintent 10 ans, et il m'arrive souvent d'aller jusqu'à Rennes pour voir mon équipe préféré jouer. <br/>
-
-                        Le football m'apporte beaucoup dans la vie de tout les jours, il m'a permit de développer mon sens du travail en équipe, mais également 
-                        mon sens de la détermination quand je fais quelque chose. <br/>
-
-                        <i class="fa-solid fa-futbol"></i>
-                        
-                        </p>
-                    </div>
-
-                    <hr/>
-                
-                    <div class="basketball">
-
-                        <h4><ins>Le basketball</ins></h4>
-
-                        <p>J'ai également un fort intérêt pour le basketball <br/>
-
-                        Lors d'un voyage à New York en 2019, j'ai pu aller voir un match de basket entre Brooklyn et Indiana, et c'est depuis ce jour que je suis la NBA
-                        et donc le basket. <br/>
-
-                        Le basketball m'a beaucoup apporté en anglais principalement, car lorsque je regarde des matchs je les regarde en VO, ainsi j'essaie de comprendre
-                        au mieux et donc d'améliorer mon niveau en anglais. <br/>
-
-                        Le seul inconvénient du basket américain est que les nuits peuvent être courtes ;)
-
-                        </p>
-
-                        <figure>
-                            <img src="images/nba.png" alt="Logo NBA" title="NBA (National Basketball Association)">
-                        </figure>
-
-                    </div>
-
-                    <hr/>
-                
-                    <div class="formule1">
-
-                        <h4><ins>La Formule 1</ins> </h4>
-
-                        <p>Enfin, ma passion pour la Formule 1 a commencé il y a peu, quand j'ai commencé à m'intéresser à ce sport<br/>
-
-                        J'ai tout de suite adoré car c'est un sport spectactulaire où les conducteurs donnent tout pour le spectacle<br/>
-                        J'essaie depuis deux ans de suivre un maximum les grands prix mais c'est parfois compliqué avec les horaires
-                        des courses. <br/>
-
-                        Ce sport est également incroyable car il montre à quel point une vie ne tient à pas grand-chose parfois</p>
-
-                        <figure>
-                            <img src="images/f1.png" alt="Logo Formule 1" title="Formule 1">
-                        </figure>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="enbref">
-
-            <h2><ins>En Bref</ins></h2>
-
-            <p>Je suis donc un étudiant motivé avec une grande envie de réussir, et si possible, avec l'aide de l'alternance. <br/>
-
-            Je suis capable de maîtriser plusieurs langages informatiques, et de bien les utiliser. <br/>
-
-            J'ai pu réaliser des projets qui m'ont beaucoup apporté en terme d'expérience et de soft skills. <br/>
-
-            Je suis un grand passionné de sports mais pas seulement, je suis très curieux et je peux m'intéresser à tout. <br/>
-
-            Si vous souhaitez me joindre ou même consulter mon CV, vous pouvez jeter un oeil à la section situé juste en-dessous.</p>
-
-            <hr/>
-
-            </p>
-
-            <div class="contacts">
-
-                <div class="renseignements">
-    
-                    <p>
-    
-                    Mathis Briend <br/>
-    
-                    14 Rue Bellevue Saint-Aubin <br/>
-    
-                    22120 Yffiniac <br/>
-    
-                    <i class="fa-solid fa-phone"></i> 07 82 97 80 07<br/>
-    
-                    <i class="fa-regular fa-envelope"></i> <a href="mailto:mathis.briend22@gmail.com">mathis.briend22@gmail.com</a>
-    
-                    </p>
-    
-                </div>
-    
-                <hr/>
-    
-                <div class="CV">
-    
-                    <img src="images/cv.png">
-    
-                    
-                    <a href="downloads/CV_BRIEND_Mathis.pdf" download="Mon CV.pdf"> 
-                        <img src="images/telechargement.png"> Cliquez pour téléchargez mon CV
-                    </a>
-    
-    
-                </div>
-    
-            </div>
-
-        </div>
-
-
-
-
-
-    </main>
-
-    <script src="app.js"></script>
-
-
-
+    <script src="script.js"></script>
 </body>
+</html>
