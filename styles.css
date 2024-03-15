@@ -5,7 +5,6 @@ html{
 header {
     background-color: #333;
     color: #fff;
-    padding: 15px;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -306,6 +305,158 @@ body {
 .about-me-picture-cooperl > a:last-of-type > img{
     width: 15rem;
     align-self: center;
+}
+
+.and-also{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-me-trip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #145DA0;
+    color: white;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.about-me-trip hr {
+    margin-left: 2rem;
+}
+
+.about-me-trip-title {
+    display: flex;
+}
+
+.about-me-trip-title-text {
+    font-size: 1.75rem;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.about-me-informations-trip {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    width: 50rem;
+    text-align: justify;
+}
+
+.about-me-trip-icon {
+    width: 5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+#carrousel{
+    width: 500px;
+    height: 250px;
+    border: solid 4px white;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+#container{
+    width: 500px;
+    height: 250px;
+}
+
+.photo {
+    width: 500px;
+    height: 250px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
+.carrousel-button{
+    position: absolute;
+    width: 75px;
+    cursor: pointer;
+    top: 88px;
+}
+
+#g{
+    left: 0;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#d{
+    right: 0;
+    opacity: 0.5;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover{
+    transform: scale(1.1) rotate(180deg);
+    opacity: 1;
+}
+
+#d:hover{
+    transform: scale(1.1) rotate(0deg);
+    opacity: 1;
+}
+
+.about-me-sport {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #145DA0;
+    color: white;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.about-me-sport hr {
+    margin-right: 2rem;
+}
+
+.about-me-sport-title {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-me-sport-title-text {
+    font-size: 1.75rem;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.about-me-informations-sport {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    width: 50rem;
+    text-align: justify;
+}
+
+.about-me-sport-picture {
+    width: 500px;
+    height: 250px;
+    border: solid 4px white;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.about-me-sport-picture img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-me-sport-icon {
+    width: 5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 768px) {

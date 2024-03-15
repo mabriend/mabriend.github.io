@@ -7,12 +7,58 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.body.onload = function(){
+    nbr = 5;
+    p = 0;
+    container = document.getElementById('container');
+    g = document.getElementById('g');
+    d = document.getElementById('d');
+    container.style.width = (500*nbr)+"px";
+    for(i=1;i<=nbr;i++) {
+        div=document.createElement("div");
+        div.className="photo";
+        div.style.backgroundImage="url('images/image"+i+".jpg')";
+        container.appendChild(div);
+    }
+    afficherMasquer();
+}
+
+g.onclick = function() {
+    if(p>0){
+        p--;
+    }  
+    container.style.transform = "translate(" + -500 * p + "px)";
+    container.style.transition = "all 0.5s ease";
+    afficherMasquer();
+}
+
+d.onclick = function() {
+    if(p<4) {
+        p++;
+    } 
+    container.style.transform = "translate(" + -500 * p + "px)";
+    container.style.transition = "all 0.5s ease";
+    afficherMasquer();
+}
+
+function afficherMasquer() {
+    if(p==0) {
+        g.style.visibility="hidden";
+    } else {
+        g.style.visibility="visible";
+    }
+    if(p==4) {
+        d.style.visibility="hidden";
+    } else {
+        d.style.visibility="visible";
+    }
+}
 
 window.addEventListener('load', function () {
     document.getElementById('accueil').style.transform = "scale(1.1)";
 })
 
-var aboutMeHeaderElement = document.querySelector('.about-me');
+var aboutMeHeaderElement = document.querySelector('.about-me-header');
 var observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -24,6 +70,7 @@ var observer = new IntersectionObserver(function(entries, observer) {
             aboutMeHeaderDescription.classList.toggle('animateRight');
             var header = document.querySelector('header');
             header.style.visibility = 'visible';
+            header.style.padding = '15px';
             observer.unobserve(entry.target);
         }
     });
