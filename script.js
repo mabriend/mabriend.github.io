@@ -113,10 +113,28 @@ var observer = new IntersectionObserver(function(entries, observer) {
             informaticSkillsTitle.classList.toggle('animateBottom');
             var informaticSkillsWeb = document.getElementById('informatic-skills-web');
             informaticSkillsWeb.classList.toggle('animateLeft');
+            var informaticSkillsPOO = document.getElementById('informatic-skills-poo');
+            informaticSkillsPOO.classList.toggle('animateFade');
             var informaticSkillsFrameworks = document.getElementById('informatic-skills-frameworks');
             informaticSkillsFrameworks.classList.toggle('animateRight');
+            var informaticSkillsDatabase = document.getElementById('informatic-skills-database');
+            informaticSkillsDatabase.classList.toggle('animateLeft');
+            var informaticSkillsOther = document.getElementById('informatic-skills-other');
+            informaticSkillsOther.classList.toggle('animateRight');
             observer.unobserve(entry.target);
         }
     });
 }, { threshold: 0.5 })
 observer.observe(informaticSkills);
+
+var informaticSkillsDescriptionObserver = document.querySelector('.informatic-skills-description');
+var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var informaticSkillsDescription = document.getElementById('informatic-skills-description');
+            informaticSkillsDescription.classList.toggle('animateTop');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 })
+observer.observe(informaticSkillsDescriptionObserver);

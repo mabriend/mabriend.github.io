@@ -183,6 +183,11 @@ body {
     visibility: visible;
 }
 
+.animateFade{
+    animation: fadeIn 2s;
+    visibility: visible;
+}
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -224,6 +229,15 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -495,6 +509,8 @@ body {
     background-size: cover;
     opacity: 1;
     padding: 1rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
 }
 
 .skills-title-text{
@@ -519,7 +535,12 @@ body {
     justify-content: space-around;
 }
 
-.informatic-skills-web, .informatic-skills-poo, .informatic-skills-frameworks{
+.informatic-skills-web, 
+.informatic-skills-poo, 
+.informatic-skills-frameworks, 
+.informatic-skills-database,
+.informatic-skills-other,
+.informatic-skills-description{
     margin: 1rem;
     background-color: rgba(255, 255, 255, 0.75);
     color: #145DA0;
@@ -529,19 +550,36 @@ body {
     transition: 1s ease;
 }
 
+.informatic-skills-description {
+    font-size: 1.75rem;
+    text-align: justify;
+    padding: 2rem;
+}
 
-.informatic-skills-web:hover, .informatic-skills-poo:hover, .informatic-skills-frameworks:hover {
+.informatic-skills-web:hover, 
+.informatic-skills-poo:hover, 
+.informatic-skills-frameworks:hover, 
+.informatic-skills-database:hover,
+.informatic-skills-other:hover {
     scale: 1.05;
     transition: 1s ease;
     background-color: rgba(255, 255, 255, 0.90);
 }
 
-.informatic-skills-web h3, .informatic-skills-poo h3, .informatic-skills-frameworks h3 {
+.informatic-skills-web h3, 
+.informatic-skills-poo h3, 
+.informatic-skills-frameworks h3,
+.informatic-skills-database h3,
+.informatic-skills-other h3 {
     font-size: 2rem;
     text-align: center;
 }
 
-.informatic-skills-web-logos, .informatic-skills-poo-logos, .informatic-skills-frameworks-logos{
+.informatic-skills-web-logos, 
+.informatic-skills-poo-logos, 
+.informatic-skills-frameworks-logos,
+.informatic-skills-database-logos,
+.informatic-skills-other-logos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -550,6 +588,18 @@ body {
 .informatic-skills-web-logos img {
     width: 6rem;
     object-fit: cover;
+    margin: 1rem;
+}
+
+.informatic-skills-database-logos img {
+    width: 10rem;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.informatic-skills-other-logos img {
+    width: 10rem;
+    object-fit: contain;
     margin: 1rem;
 }
 
