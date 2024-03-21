@@ -104,3 +104,19 @@ var observer = new IntersectionObserver(function(entries, observer) {
     });
 }, { threshold: 0.5 })
 observer.observe(aboutMeCooperlElement);
+
+var informaticSkills = document.querySelector('.informatic-skills');
+var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var informaticSkillsTitle = document.getElementById('skills-title-text');
+            informaticSkillsTitle.classList.toggle('animateBottom');
+            var informaticSkillsWeb = document.getElementById('informatic-skills-web');
+            informaticSkillsWeb.classList.toggle('animateLeft');
+            var informaticSkillsFrameworks = document.getElementById('informatic-skills-frameworks');
+            informaticSkillsFrameworks.classList.toggle('animateRight');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 })
+observer.observe(informaticSkills);

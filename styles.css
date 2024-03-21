@@ -178,6 +178,11 @@ body {
     visibility: visible;
 }
 
+.animateBottom{
+    animation: slideInBottom 1s ease-out;
+    visibility: visible;
+}
+
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -204,6 +209,17 @@ body {
     from {
         opacity: 0;
         transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
     }
     to {
         opacity: 1;
@@ -259,11 +275,18 @@ body {
 .about-me-picture-iut > a:first-of-type > img{
     width: 5rem;
     margin: 2rem;
+    transition: 1s ease;
+}
+
+.about-me-picture-iut > a > img:hover{
+    scale: 1.1;
+    transition: 1s ease;
 }
 
 .about-me-picture-iut > a:last-of-type > img{
     width: 20rem;
     align-self: center;
+    transition: 1s ease;
 }
 
 .about-me-cooperl{
@@ -300,11 +323,19 @@ body {
 .about-me-picture-cooperl > a:first-of-type > img{
     width: 20rem;
     align-self: center;
+    transition: 1s ease;
+}
+
+.about-me-picture-cooperl > a > img:hover{
+    scale: 1.1;
+    transition: 1s ease;
 }
 
 .about-me-picture-cooperl > a:last-of-type > img{
     width: 15rem;
+    margin: 1rem;
     align-self: center;
+    transition: 1s ease;
 }
 
 .and-also{
@@ -457,6 +488,93 @@ body {
     margin-top: 1rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
+}
+
+.skills {
+    background-image: url('images/fond-competences.jpg');
+    background-size: cover;
+    opacity: 1;
+    padding: 1rem;
+}
+
+.skills-title-text{
+    align-items: center;
+    display: flex;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.skills-title-text::before,
+.skills-title-text::after {
+    background: white;
+    content: "";
+    flex: 1;
+    height: .050em;
+    margin: 0 .5em;
+}
+
+.informatic-skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.informatic-skills-web, .informatic-skills-poo, .informatic-skills-frameworks{
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #145DA0;
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    transition: 1s ease;
+}
+
+
+.informatic-skills-web:hover, .informatic-skills-poo:hover, .informatic-skills-frameworks:hover {
+    scale: 1.05;
+    transition: 1s ease;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+.informatic-skills-web h3, .informatic-skills-poo h3, .informatic-skills-frameworks h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.informatic-skills-web-logos, .informatic-skills-poo-logos, .informatic-skills-frameworks-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.informatic-skills-web-logos img {
+    width: 6rem;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.informatic-skills-frameworks img {
+    width: 7.5rem;
+    object-fit: contain;
+    margin: 1rem;
+}
+
+.informatic-skills-frameworks img:first-of-type {
+    width: 10rem;
+    object-fit: contain;
+    margin: 1rem;
+}
+
+.informatic-skills-poo-logos img:first-of-type {
+    width: 5rem;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.informatic-skills-poo-logos img:last-of-type {
+    width: 10rem;
+    object-fit: contain;
+    margin: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
