@@ -505,7 +505,7 @@ body {
 }
 
 .skills {
-    background-image: url('images/fond-competences.jpg');
+    background-color: #145DA0;
     background-size: cover;
     opacity: 1;
     padding: 1rem;
@@ -625,6 +625,57 @@ body {
     width: 10rem;
     object-fit: contain;
     margin: 1rem;
+}
+
+.projects{
+    margin: 2rem;
+}
+
+.projects > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px dashed;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nba-app-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nba-app-project > h2 {
+    font-size: 2rem;
+}
+
+.nba-app-project > hr {
+    background-color: #145DA0;
+    color: #145DA0;
+    width: 90%;
+}
+
+.nba-app-project > span {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.nba-app-project > a {
+    transition: 1s ease;
+}
+
+.nba-app-project > a:hover {
+    scale: 1.10;
+    transition: 1s ease;
+}
+
+.nba-app-project-image{
+    width: 30rem;
+    border: solid 2px #145DA0;
+    margin: 2rem;
 }
 
 @media only screen and (max-width: 768px) {

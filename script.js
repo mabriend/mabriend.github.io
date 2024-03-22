@@ -121,6 +121,9 @@ var observer = new IntersectionObserver(function(entries, observer) {
             informaticSkillsDatabase.classList.toggle('animateLeft');
             var informaticSkillsOther = document.getElementById('informatic-skills-other');
             informaticSkillsOther.classList.toggle('animateRight');
+            var header = document.querySelector('header');
+            header.style.visibility = 'visible';
+            header.style.padding = '15px';
             observer.unobserve(entry.target);
         }
     });
@@ -132,7 +135,10 @@ var observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(function(entry) {
         if (entry.isIntersecting) {
             var informaticSkillsDescription = document.getElementById('informatic-skills-description');
-            informaticSkillsDescription.classList.toggle('animateTop');
+            informaticSkillsDescription.classList.toggle('animateFade');
+            var header = document.querySelector('header');
+            header.style.visibility = 'visible';
+            header.style.padding = '15px';
             observer.unobserve(entry.target);
         }
     });
