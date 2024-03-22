@@ -575,9 +575,7 @@ body {
     text-align: center;
 }
 
-.informatic-skills-web-logos, 
 .informatic-skills-poo-logos, 
-.informatic-skills-frameworks-logos,
 .informatic-skills-database-logos,
 .informatic-skills-other-logos {
     display: flex;
@@ -585,7 +583,22 @@ body {
     justify-content: space-around;
 }
 
-.informatic-skills-web-logos img {
+.html-css-js {
+    display: flex;
+}
+
+.typescript {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.typescript > img {
+   margin: 0;
+   width: 6rem;
+}
+
+.html-css-js > img {
     width: 6rem;
     object-fit: cover;
     margin: 1rem;
@@ -601,6 +614,11 @@ body {
     width: 10rem;
     object-fit: contain;
     margin: 1rem;
+}
+
+.informatic-skills-frameworks-logos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 
 .informatic-skills-frameworks img {
@@ -628,7 +646,7 @@ body {
 }
 
 .projects{
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .projects > h1 {
@@ -641,23 +659,23 @@ body {
     margin-left: auto;
 }
 
-.nba-app-project {
+.nba-app-project, .coop-prev-project {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.nba-app-project > h2 {
+.nba-app-project > h2, .coop-prev-project > h2 {
     font-size: 2rem;
 }
 
-.nba-app-project > hr {
+.nba-app-project > hr, .coop-prev-project > hr {
     background-color: #145DA0;
     color: #145DA0;
     width: 90%;
 }
 
-.nba-app-project > span {
+.nba-app-project > span, .coop-prev-project > span {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
@@ -673,6 +691,13 @@ body {
 }
 
 .nba-app-project-image{
+    width: 30rem;
+    border: solid 2px #145DA0;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.coop-prev-video {
     width: 30rem;
     border: solid 2px #145DA0;
     margin: 2rem;
