@@ -1,0 +1,221 @@
+@media only screen and (max-width: 768px) {
+    .navigation-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-buttons a {
+        margin-top: 10px;
+    }
+
+    .navigation-buttons a:hover {
+        background-color: white;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bar {
+        margin: 0.20rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar > ul {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0; /* Ajout de cet espacement entre les éléments en mode colonne */
+    }
+
+    .navbar > ul > li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Styles pour les écrans jusqu'à 768px de large */
+@media only screen and (max-width: 768px) {
+    .about-me-header {
+        flex-direction: column;
+        height: auto;
+        width: 101%;
+    }
+
+    .about-me-header-title {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        align-self: flex-start;
+        width: 80%;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .about-me-header-description {
+        margin-right: auto;
+        margin-left: auto;
+        align-self: flex-start;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .about-me-header-picture {
+        width: 20rem;
+        align-self: center;
+    }
+
+    .about-me-iut,
+    .about-me-cooperl,
+    .about-me-trip,
+    .about-me-sport,
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .about-me > hr {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about-me-informations-iut > p:first-of-type,
+    .about-me-informations-cooperl > p:first-of-type {
+        margin: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-me-informations-iut > p:last-of-type,
+    .about-me-informations-cooperl > p:last-of-type {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-me-picture-cooperl, .about-me-picture-iut {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-picture-iut > a > img
+    {
+        width: 80%;
+        margin: 0;
+    }
+
+    .about-me-picture-cooperl > a > img
+    {
+        width: 50%;
+    }
+
+    .about-me-picture-iut > a:last-of-type
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me-picture-iut > a:last-of-type > img
+    {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .about-me-picture-cooperl > a:last-of-type > img {
+        width: 10rem;
+        margin: 1rem 0;
+    }
+
+    .about-me-trip-icon,
+    .about-me-sport-icon {
+        margin: 1rem 0;
+    }
+
+    .about-me-sport-picture,
+    .nba-app-project-image,
+    .coop-prev-video {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .about-me-trip-title,
+    .about-me-sport-title,
+    .skills-title-text,
+    .projects > h1,
+    .nba-app-project > h2,
+    .coop-prev-project > h2,
+    .nba-app-project > span,
+    .coop-prev-project > span {
+        margin: 1rem 0;
+    }
+
+    .informatic-skills,
+    .informatic-skills-web,
+    .informatic-skills-poo,
+    .informatic-skills-frameworks,
+    .informatic-skills-database,
+    .informatic-skills-other {
+        flex-direction: column;
+    }
+
+    .informatic-skills-description {
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .informatic-skills-web h3,
+    .informatic-skills-poo h3,
+    .informatic-skills-frameworks h3,
+    .informatic-skills-database h3,
+    .informatic-skills-other h3 {
+        font-size: 1rem;
+    }
+
+    .html-css-js > img,
+    .typescript > img,
+    .informatic-skills-database-logos img,
+    .informatic-skills-other-logos img,
+    .informatic-skills-frameworks img {
+        width: 4rem;
+        margin: 0.5rem;
+    }
+
+    .informatic-skills-poo-logos img:first-of-type {
+        width: 3rem;
+    }
+
+    .informatic-skills-poo-logos img:last-of-type {
+        width: 6rem;
+    }
+
+    .informatic-skills-frameworks-logos img:first-of-type {
+        width: 6rem;
+    }
+
+    .informatic-skills-frameworks-logos img {
+        width: 5rem;
+    }
+
+    .informatic-skills-frameworks img:first-of-type {
+        width: 8rem;
+    }
+
+    .about-me-trip,
+    .about-me-sport {
+        margin-bottom: 2rem;
+    }
+}
