@@ -9,7 +9,7 @@
     }
 
     .navigation-buttons a:hover {
-        background-color: white;
+        background-color: rgba(20, 93, 160, 0.5);
     }
 
     .menu-toggle {
@@ -139,16 +139,44 @@
         margin: 1rem 0;
     }
 
+    .about-me-trip-title, .about-me-sport-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-trip-title-text, .about-me-sport-title-text {
+        margin: 0;
+    }
+
+    .about-me-trip hr, .about-me-sport hr { 
+        display: none;
+    }
+
+    .about-me-informations-trip, .about-me-informations-sport {
+        width: fit-content;
+        text-align: center;
+        margin: 1rem;
+    }
+
     .about-me-trip-icon,
     .about-me-sport-icon {
         margin: 1rem 0;
     }
 
-    .about-me-sport-picture,
+    .about-me-sport-picture{
+        width: 85%;
+    }
+
+    .about-me-sport-picture > img {
+        right: 2rem;
+        position: relative;
+    }
+
     .nba-app-project-image,
     .coop-prev-video {
         width: 80%;
-        margin: 1rem 0;
+        margin: 1rem auto;
     }
 
     .about-me-trip-title,
@@ -218,4 +246,31 @@
     .about-me-sport {
         margin-bottom: 2rem;
     }
+
+    #carrousel {
+        max-width: 85%; /* Pour s'adapter à la largeur de son conteneur parent */
+        overflow: hidden;
+        margin: 2rem 1rem;
+    }
+    
+    #container {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .photo {
+        object-fit: cover;
+        position: relative;
+        right: 4rem;
+    }
+    
+    .carrousel-button {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+    
 }
