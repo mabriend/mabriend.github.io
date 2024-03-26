@@ -1,4 +1,9 @@
 @media only screen and (max-width: 768px) {
+    html{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
     .navigation-buttons{
         display: flex;
         flex-direction: column;
@@ -179,6 +184,11 @@
         margin: 1rem auto;
     }
 
+    .nba-app-project > a {
+        display: flex;
+        justify-content: center;
+    }
+
     .about-me-trip-title,
     .about-me-sport-title,
     .skills-title-text,
@@ -190,6 +200,26 @@
         margin: 1rem 0;
     }
 
+    .skills-title-text {
+        font-size: 2rem;
+    }
+
+    .projects > h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .projects h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .informatic-skills,
     .informatic-skills-web,
     .informatic-skills-poo,
@@ -197,6 +227,7 @@
     .informatic-skills-database,
     .informatic-skills-other {
         flex-direction: column;
+        align-items: center;
     }
 
     .informatic-skills-description {
@@ -216,8 +247,8 @@
     .html-css-js > img,
     .typescript > img,
     .informatic-skills-database-logos img,
-    .informatic-skills-other-logos img,
-    .informatic-skills-frameworks img {
+    .informatic-skills-other-logos img
+    {
         width: 4rem;
         margin: 0.5rem;
     }
@@ -230,16 +261,21 @@
         width: 6rem;
     }
 
+    .informatic-skills-frameworks-logos {
+        align-items: center;
+        justify-items: center;
+    }
+
     .informatic-skills-frameworks-logos img:first-of-type {
-        width: 6rem;
+        width: 4rem;
     }
 
     .informatic-skills-frameworks-logos img {
-        width: 5rem;
+        width: 3rem;
     }
 
     .informatic-skills-frameworks img:first-of-type {
-        width: 8rem;
+        width: 6rem;
     }
 
     .about-me-trip,
