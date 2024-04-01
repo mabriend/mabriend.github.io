@@ -309,4 +309,31 @@
         cursor: pointer;
     }
     
+    .contact {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact > h2 {
+        margin-top: 3rem;
+    }
+
+    .linkedin {
+        margin: 1rem;
+    }
+
+    .CV {
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-classic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

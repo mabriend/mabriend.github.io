@@ -702,3 +702,60 @@ body {
     border: solid 2px #145DA0;
     margin: 2rem;
 }
+
+.contact {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact > h2 {
+    width: fit-content;
+    padding: 1rem;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+}
+
+.contact-classic {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-classic > div {
+    margin: 1rem;
+    align-items: center;
+}
+
+.mail > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease;
+}
+
+i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.phone {
+    font-size: 1.5rem;
+}
+
+.linkedin > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.CV > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
